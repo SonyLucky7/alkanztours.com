@@ -8,7 +8,7 @@ import MobileMenu from './MobileMenu';
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,13 +51,7 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center gap-6">
-            <button
-              onClick={() => setIsSearchOpen(!isSearchOpen)}
-              className="text-white/70 hover:text-white transition-colors"
-              aria-label="Search"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            </button>
+
             <Link
               href="/tours"
               className="bg-[var(--color-primary,#C9A227)] text-[var(--color-text-inverse,#080808)] hover:opacity-90 transition-opacity rounded-full px-6 py-2.5 font-medium"
