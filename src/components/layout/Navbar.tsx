@@ -1,0 +1,94 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import MobileMenu from './MobileMenu';
+
+export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <>
+      <header
+        className={`fixed top-0 w-full z-50 transition-all duration-300 h-[var(--nav-height,80px)] ${
+          isScrolled
+            ? 'bg-[var(--color-bg,#080808)]/90 backdrop-blur-md border-b border-white/10'
+            : 'bg-transparent'
+        }`}
+      >
+        <div className="container mx-auto px-6 h-full flex items-center justify-between">
+          <Link
+            href="/"
+            className="relative block w-40 h-10 md:w-56 md:h-14 overflow-hidden"
+          >
+            <Image 
+              src="/logo.png" 
+              alt="Holidayys Tours" 
+              fill
+              className="object-cover object-center"
+              priority 
+            />
+          </Link>
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-8">
+            <Link href="/tours" className="text-white/70 hover:text-white transition-colors">Tours</Link>
+            <Link href="/destinations" className="text-white/70 hover:text-white transition-colors">Destinations</Link>
+            <Link href="/tours" className="text-white/70 hover:text-white transition-colors">Experiences</Link>
+            <Link href="/about" className="text-white/70 hover:text-white transition-colors">About</Link>
+            <Link href="/contact" className="text-white/70 hover:text-white transition-colors">Contact</Link>
+          </nav>
+
+          <div className="hidden md:flex items-center gap-6">
+            <button
+              onClick={() => setIsSearchOpen(!isSearchOpen)}
+              className="text-white/70 hover:text-white transition-colors"
+              aria-label="Search"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </button>
+            <Link
+              href="/tours"
+              className="bg-[var(--color-primary,#C9A227)] text-[var(--color-text-inverse,#080808)] hover:opacity-90 transition-opacity rounded-full px-6 py-2.5 font-medium"
+            >
+              BOOK NOW
+            </Link>
+          </div>
+
+          {/* Mobile Toggle */}
+          <div className="flex md:hidden items-center gap-4">
+            <Link
+              href="/tours"
+              className="bg-[var(--color-primary,#C9A227)] text-[var(--color-text-inverse,#080808)] text-sm rounded-full px-4 py-2 font-medium"
+            >
+              BOOK NOW
+            </Link>
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              className="text-white p-2"
+              aria-label="Open menu"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+      />
+    </>
+  );
+}
