@@ -89,7 +89,7 @@ export default function CheckoutPage() {
           {step === 1 && (
             <div>
               <h2 className="text-2xl font-semibold mb-6">Main traveller's contact details</h2>
-              <form id="checkout-form" onSubmit={handleContinue} className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-2xl p-6 md:p-8">
+              <form id="checkout-form" onSubmit={handleContinue} className="bg-[#111111]/80 backdrop-blur-md border border-[var(--color-border)] rounded-2xl p-6 md:p-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
                     <label className="text-sm font-medium">Title <span className="text-red-500">*</span></label>
@@ -168,7 +168,7 @@ export default function CheckoutPage() {
           {step === 2 && (
             <div>
               <h2 className="text-2xl font-semibold mb-6">Review & Book</h2>
-              <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-2xl p-6 md:p-8 mb-6">
+              <div className="bg-[#111111]/80 backdrop-blur-md border border-[var(--color-border)] rounded-2xl p-6 md:p-8 mb-6">
                 <h3 className="font-playfair text-xl mb-4">Contact Details</h3>
                 <div className="space-y-2 text-[var(--color-text-secondary)]">
                   <p><span className="text-white">Name:</span> {formData.title} {formData.firstName} {formData.lastName}</p>
@@ -203,7 +203,7 @@ export default function CheckoutPage() {
 
         {/* Right Column: Order Summary */}
         <div className="w-full lg:w-[400px]">
-          <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-2xl p-6 sticky top-[100px]">
+          <div className="bg-[#111111]/80 backdrop-blur-md border border-[var(--color-border)] rounded-2xl p-6 sticky top-[100px]">
             <h3 className="font-playfair text-xl mb-6 pb-4 border-b border-[var(--color-border)]">Order Summary</h3>
             
             <div className="space-y-6 mb-6">

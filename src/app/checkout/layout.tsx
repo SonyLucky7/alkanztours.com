@@ -5,8 +5,23 @@ import { CurrencySwitcher } from './CurrencySwitcher';
 
 export default function CheckoutLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen bg-[var(--color-bg)] text-white font-[family-name:var(--font-inter)]">
-      <header className="border-b border-[var(--color-border)] bg-[var(--color-bg-card)] sticky top-0 z-50">
+    <div className="min-h-screen text-white font-[family-name:var(--font-inter)] relative">
+      {/* Fixed Video Background */}
+      <div className="fixed inset-0 z-[-2]">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="w-full h-full object-cover"
+        >
+          <source src="/videos/checkout.mp4" type="video/mp4" />
+        </video>
+      </div>
+      {/* Dark Overlay for readability */}
+      <div className="fixed inset-0 bg-[#080808]/80 z-[-1]"></div>
+
+      <header className="border-b border-[var(--color-border)]/50 bg-[#080808]/80 backdrop-blur-md sticky top-0 z-50">
         <div className="container mx-auto px-4 lg:px-8 h-[80px] flex items-center justify-between">
           <Link href="/" className="relative block w-32 h-8 md:w-40 md:h-10 overflow-hidden">
             <Image 
