@@ -1,15 +1,21 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { type Tour } from '@/lib/data/tours';
 import { getTourImage } from '@/lib/images';
 import { formatPrice } from '@/lib/utils';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { useCart } from '@/lib/context/CartContext';
 
 interface TourHeroProps {
   tour: Tour;
 }
 
 export function TourHero({ tour }: TourHeroProps) {
+  const router = useRouter();
+  const { addToCart } = useCart();
   const imageUrl = getTourImage(tour.slug, tour.category);
   
   return (
@@ -72,12 +78,22 @@ export function TourHero({ tour }: TourHeroProps) {
           </div>
           
           <div className="flex flex-wrap gap-4">
-            <Link 
-              href={`/booking/${tour.slug}`}
-              className="bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-black px-8 py-3 rounded-full font-semibold transition-colors"
+            <button 
+              onClick={() => {
+                addToCart({
+                  tour,
+                  date: new Date().toISOString().split('T')[0],
+                  adults: 1,
+                  children: 0,
+                  pricePerAdult: tour.price,
+                  pricePerChild: tour.price * 0.5,
+                });
+                router.push('/checkout');
+              }}
+              className="bg-[var(--color-primary)] hover:bg-[#cca829] text-black px-8 py-3 rounded-full font-semibold transition-colors"
             >
               Book Now
-            </Link>
+            </button>
             <Link 
               href="/contact"
               className="border border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-full font-semibold transition-colors"

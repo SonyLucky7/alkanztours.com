@@ -2,19 +2,32 @@
 
 import { useState } from 'react';
 import { type Tour } from '@/lib/data/tours';
-import { formatPrice, getWhatsAppLink } from '@/lib/utils';
+import { useCart } from '@/lib/context/CartContext';
+import { useCurrency } from '@/lib/context/CurrencyContext';
 import { useRouter } from 'next/navigation';
+import { getWhatsAppLink } from '@/lib/utils';
 
 export function BookingSidebar({ tour }: { tour: Tour }) {
   const router = useRouter();
+  const { addToCart } = useCart();
+  const { formatPrice, convertPrice } = useCurrency();
+  
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
   const [date, setDate] = useState('');
 
-  const total = (adults + (children * 0.5)) * tour.price;
+  const totalAED = (adults * tour.price) + (children * tour.price * 0.5);
 
   const handleBookNow = () => {
-    router.push(`/booking/${tour.slug}`);
+    addToCart({
+      tour,
+      date: date || new Date().toISOString().split('T')[0],
+      adults,
+      children,
+      pricePerAdult: tour.price,
+      pricePerChild: tour.price * 0.5,
+    });
+    router.push('/checkout');
   };
 
   return (
@@ -60,7 +73,7 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
 
         <div className="flex justify-between items-center mb-6 pt-4 border-t border-[var(--color-border)]">
           <span className="text-white font-semibold">Total</span>
-          <span className="text-xl text-[var(--color-primary)] font-semibold">{formatPrice(total)}</span>
+          <span className="text-xl text-[var(--color-primary)] font-semibold">{formatPrice(totalAED)}</span>
         </div>
 
         <button 

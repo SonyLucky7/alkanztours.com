@@ -54,13 +54,22 @@ export const metadata: Metadata = {
   },
 };
 
+import { CartProvider } from "@/lib/context/CartContext";
+import { CurrencyProvider } from "@/lib/context/CurrencyContext";
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <CurrencyProvider>
+          <CartProvider>
+            {children}
+          </CartProvider>
+        </CurrencyProvider>
+      </body>
     </html>
   );
 }
