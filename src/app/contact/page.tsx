@@ -92,24 +92,16 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-[var(--color-bg-secondary)] rounded-lg border border-[var(--color-border)] h-[300px] flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-[#080808]/50 z-10"></div>
+              {/* Google Maps Embed */}
+              <div className="bg-[var(--color-bg-secondary)] rounded-lg border border-[var(--color-border)] h-[300px] overflow-hidden">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d14434.773347102148!2d55.2647716960144!3d25.23880468087955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42e47c1f885f%3A0xc6c4f3f01c0c2dc4!2sAl%20Mina%20-%202nd%20December%20St%20-%20Dubai!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae" 
-                  className="absolute inset-0 w-full h-full border-0 grayscale opacity-40 z-0" 
+                  src="https://maps.google.com/maps?q=25.2315203,55.286357&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                  className="w-full h-full border-0" 
                   allowFullScreen={false} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
+                  title="Holidayys.com Office Location"
                 ></iframe>
-                <div className="relative z-20 text-center px-4">
-                  <div className="inline-block p-4 rounded-full bg-[var(--color-bg)] border border-[var(--color-border)] mb-4">
-                    <svg className="w-8 h-8 text-[var(--color-brand-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                    </svg>
-                  </div>
-                  <p className="text-white font-medium">Located in the heart of Dubai</p>
-                </div>
               </div>
             </div>
           </div>
