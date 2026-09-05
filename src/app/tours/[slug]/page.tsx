@@ -64,7 +64,7 @@ export default async function TourPage({ params }: { params: Promise<{ slug: str
       
       <Navbar />
       
-      <main className="min-h-screen bg-[var(--color-bg)] pb-20 pt-[80px]">
+      <main className="min-h-screen bg-[var(--color-bg)] pb-20">
         <TourHero tour={tour} />
         
         <div className="container mx-auto px-6 py-12">

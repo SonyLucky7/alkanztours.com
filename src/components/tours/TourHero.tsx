@@ -13,7 +13,7 @@ export function TourHero({ tour }: TourHeroProps) {
   const imageUrl = getTourImage(tour.slug, tour.category);
   
   return (
-    <div className="relative w-full h-[60vh] min-h-[500px] flex flex-col justify-end">
+    <div className="relative w-full h-auto min-h-[550px] md:h-[60vh] md:min-h-[600px] flex flex-col justify-end">
       <Image
         src={imageUrl}
         alt={tour.name}
@@ -23,7 +23,7 @@ export function TourHero({ tour }: TourHeroProps) {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
       
-      <div className="relative z-10 container mx-auto px-6 pb-12 pt-[100px]">
+      <div className="relative z-10 container mx-auto px-6 pb-12 pt-[120px] md:pt-[140px]">
         <Breadcrumbs 
           items={[
             { label: 'Home', href: '/' },
