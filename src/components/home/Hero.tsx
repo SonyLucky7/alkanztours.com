@@ -1,17 +1,18 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <Image
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=85"
-          alt="Dubai Skyline"
-          fill
-          className="object-cover"
-          priority
-        />
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="w-full h-full object-cover"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/60" />
       </div>
 
