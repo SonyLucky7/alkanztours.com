@@ -32,13 +32,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4">
           <Link 
             href="/tours" 
-            className="bg-[var(--color-primary)] text-black font-medium rounded-full px-8 py-4 transition-transform hover:scale-105"
+            className="inline-flex items-center justify-center bg-[var(--color-primary)] text-black font-semibold uppercase tracking-wider text-sm rounded-full px-10 py-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(201,162,39,0.4)]"
           >
             Explore Tours
           </Link>
           <Link 
             href="/contact" 
-            className="border border-white/30 text-white rounded-full px-8 py-4 transition-colors hover:bg-white/10"
+            className="inline-flex items-center justify-center border border-white/30 text-white font-semibold uppercase tracking-wider text-sm rounded-full px-10 py-4 transition-all duration-300 hover:bg-white/10 hover:border-white/50"
           >
             Plan Your Experience
           </Link>

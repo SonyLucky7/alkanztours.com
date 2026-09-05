@@ -54,7 +54,7 @@ export default function Navbar() {
 
             <Link
               href="/tours"
-              className="bg-[var(--color-primary,#C9A227)] text-[var(--color-text-inverse,#080808)] hover:opacity-90 transition-opacity rounded-full px-6 py-2.5 font-medium"
+              className="inline-flex items-center justify-center bg-[var(--color-primary,#C9A227)] text-black font-semibold tracking-wider text-sm rounded-full px-7 py-2.5 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_15px_rgba(201,162,39,0.4)]"
             >
               BOOK NOW
             </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
           <div className="flex md:hidden items-center gap-4">
             <Link
               href="/tours"
-              className="bg-[var(--color-primary,#C9A227)] text-[var(--color-text-inverse,#080808)] text-sm rounded-full px-4 py-2 font-medium"
+              className="inline-flex items-center justify-center bg-[var(--color-primary,#C9A227)] text-black font-semibold tracking-wide text-xs rounded-full px-5 py-2 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_10px_rgba(201,162,39,0.4)]"
             >
               BOOK NOW
             </Link>
