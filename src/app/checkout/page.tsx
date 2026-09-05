@@ -98,9 +98,9 @@ export default function CheckoutPage() {
                       onChange={(e) => setFormData({...formData, title: e.target.value})}
                       className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-white rounded-xl px-4 py-3 outline-none focus:border-[var(--color-primary)]"
                     >
-                      <option value="Mr" className="text-black">Mr</option>
-                      <option value="Mrs" className="text-black">Mrs</option>
-                      <option value="Ms" className="text-black">Ms</option>
+                      <option value="Mr">Mr</option>
+                      <option value="Mrs">Mrs</option>
+                      <option value="Ms">Ms</option>
                     </select>
                   </div>
                   
@@ -145,11 +145,11 @@ export default function CheckoutPage() {
                         onChange={(e) => setFormData({...formData, phoneCode: e.target.value})}
                         className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-white rounded-xl px-4 py-3 outline-none focus:border-[var(--color-primary)] w-32"
                       >
-                        <option value="+971" className="text-black">🇦🇪 +971</option>
-                        <option value="+91" className="text-black">🇮🇳 +91</option>
-                        <option value="+1" className="text-black">🇺🇸 +1</option>
-                        <option value="+44" className="text-black">🇬🇧 +44</option>
-                        <option value="+33" className="text-black">🇫🇷 +33</option>
+                        <option value="+971">🇦🇪 +971</option>
+                        <option value="+91">🇮🇳 +91</option>
+                        <option value="+1">🇺🇸 +1</option>
+                        <option value="+44">🇬🇧 +44</option>
+                        <option value="+33">🇫🇷 +33</option>
                       </select>
                       <input 
                         required
