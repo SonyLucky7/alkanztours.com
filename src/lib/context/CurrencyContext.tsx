@@ -35,7 +35,7 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setMounted(true);
-    const saved = localStorage.getItem('holidayys_currency') as Currency;
+    const saved = localStorage.getItem('currency') as Currency;
     if (saved && Object.keys(EXCHANGE_RATES).includes(saved)) {
       setCurrencyState(saved);
     }
@@ -43,7 +43,7 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
 
   const setCurrency = (curr: Currency) => {
     setCurrencyState(curr);
-    localStorage.setItem('holidayys_currency', curr);
+    localStorage.setItem('currency', curr);
   };
 
   const convertPrice = (priceInAED: number) => {

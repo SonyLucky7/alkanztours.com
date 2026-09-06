@@ -29,7 +29,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setMounted(true);
-    const saved = localStorage.getItem('holidayys_cart');
+    const saved = localStorage.getItem('cart');
     if (saved) {
       try {
         setItems(JSON.parse(saved));
@@ -39,7 +39,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (mounted) {
-      localStorage.setItem('holidayys_cart', JSON.stringify(items));
+      localStorage.setItem('cart', JSON.stringify(items));
     }
   }, [items, mounted]);
 

@@ -22,10 +22,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!tour) return { title: 'Tour Not Found' };
 
   return {
-    title: `${tour.name} | Holidayys Tours`,
+    title: `${tour.name} | Alkanz Tours`,
     description: tour.description,
     openGraph: {
-      title: `${tour.name} | Holidayys Tours`,
+      title: `${tour.name} | Alkanz Tours`,
       description: tour.description,
       images: [{ url: getTourImage(tour.slug, tour.category) }],
     }

@@ -24,12 +24,12 @@ export default function CheckoutLayout({ children }: { children: ReactNode }) {
 
       <header className="border-b border-[var(--color-border)]/50 bg-[#080808]/80 backdrop-blur-md sticky top-0 z-50">
         <div className="container mx-auto px-4 lg:px-8 h-[80px] flex items-center justify-between">
-          <Link href="/" className="relative block w-32 h-8 md:w-40 md:h-10 overflow-hidden">
+          <Link href="/" className="relative block w-[280px] h-[110px] md:w-[380px] md:h-[150px] overflow-hidden">
             <Image 
-              src="/logo.png" 
-              alt="Holidayys" 
+              src="/logo-alkanz.png" 
+              alt="Alkanz Tours" 
               fill
-              className="object-cover object-center"
+              className="object-contain object-left"
             />
           </Link>
 

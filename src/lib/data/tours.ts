@@ -1,5 +1,5 @@
 // ============================================================
-// Holidayys Tours — Complete Tour Catalogue (61 listings)
+// Alkanz Tours — Complete Tour Catalogue (61 listings)
 // Source of truth: user-supplied data, preserved exactly
 // ============================================================
 

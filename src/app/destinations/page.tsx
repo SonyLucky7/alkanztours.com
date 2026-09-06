@@ -7,8 +7,8 @@ import { destinations, type Destination } from '@/lib/data/tours';
 import { destinationImages } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Destinations in UAE | Holidayys Tours',
-  description: 'Explore the stunning destinations of the UAE with Holidayys Tours, including Dubai, Abu Dhabi, and more.',
+  title: 'Destinations in UAE | Alkanz Tours',
+  description: 'Explore the stunning destinations of the UAE with Alkanz Tours, including Dubai, Abu Dhabi, and more.',
 };
 
 export default function DestinationsPage() {

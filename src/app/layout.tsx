@@ -17,10 +17,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://holidayys.com"),
+  metadataBase: new URL("https://alkanztours.com"),
   title: {
-    default: "Holidayys Tours — Discover the UAE Differently",
-    template: "%s | Holidayys Tours",
+    default: "Alkanz Tours — Discover the UAE Differently",
+    template: "%s | Alkanz Tours",
   },
   description:
     "Explore Dubai, Abu Dhabi and the UAE through unforgettable attractions, adventures and experiences. Book tours, desert safaris, theme parks, water activities and more.",
@@ -32,19 +32,19 @@ export const metadata: Metadata = {
     "Burj Khalifa tickets",
     "Dubai activities",
     "travel Dubai",
-    "Holidayys Tours",
+    "Alkanz Tours",
   ],
   openGraph: {
     type: "website",
     locale: "en_AE",
-    siteName: "Holidayys Tours",
-    title: "Holidayys Tours — Discover the UAE Differently",
+    siteName: "Alkanz Tours",
+    title: "Alkanz Tours — Discover the UAE Differently",
     description:
       "Explore Dubai, Abu Dhabi and the UAE through unforgettable attractions, adventures and experiences.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Holidayys Tours — Discover the UAE Differently",
+    title: "Alkanz Tours — Discover the UAE Differently",
     description:
       "Explore Dubai, Abu Dhabi and the UAE through unforgettable attractions, adventures and experiences.",
   },

@@ -3,7 +3,7 @@ import Footer from '@/components/layout/Footer';
 import Hero from '@/components/home/Hero';
 import FeaturedExperiences from '@/components/home/FeaturedExperiences';
 import CategoryExplorer from '@/components/home/CategoryExplorer';
-import WhyHolidayys from '@/components/home/WhyHolidayys';
+import WhyAlkanz from '@/components/home/WhyAlkanz';
 import DestinationsSection from '@/components/home/DestinationsSection';
 import CTASection from '@/components/home/CTASection';
 
@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
         <FeaturedExperiences />
         <CategoryExplorer />
-        <WhyHolidayys />
+        <WhyAlkanz />
         <DestinationsSection />
         <CTASection />
       </main>

@@ -6,8 +6,8 @@ import Footer from '@/components/layout/Footer';
 import { TourCatalogue } from '@/components/tours/TourCatalogue';
 
 export const metadata: Metadata = {
-  title: 'Tours & Experiences | Holidayys Tours',
-  description: 'Discover unforgettable experiences across Dubai and the UAE with Holidayys Tours.',
+  title: 'Tours & Experiences | Alkanz Tours',
+  description: 'Discover unforgettable experiences across Dubai and the UAE with Alkanz Tours.',
 };
 
 export default function ToursPage() {

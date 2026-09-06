@@ -1,4 +1,4 @@
-export default function WhyHolidayys() {
+export default function WhyAlkanz() {
   const benefits = [
     {
       title: "Curated Experiences",

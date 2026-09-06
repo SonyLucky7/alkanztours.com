@@ -3,7 +3,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy | Holidayys Tours',
+  title: 'Cookie Policy | Alkanz Tours',
 };
 
 export default function CookiesPage() {
@@ -22,7 +22,7 @@ export default function CookiesPage() {
 
         <div className="container mx-auto px-4 max-w-3xl prose prose-invert prose-gold">
           <p className="text-[var(--color-text-secondary)]">
-            This Cookie Policy explains how Holidayys Tours uses cookies and similar tracking technologies on our website.
+            This Cookie Policy explains how Alkanz Tours uses cookies and similar tracking technologies on our website.
           </p>
           
           <h2 className="text-2xl text-white font-[family-name:var(--font-playfair)] mt-8 mb-4">1. What Are Cookies</h2>

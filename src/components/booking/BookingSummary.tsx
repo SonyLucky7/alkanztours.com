@@ -67,7 +67,7 @@ export function BookingSummary({ tour }: { tour: Tour }) {
 
         <div className="mt-6 text-center text-sm">
           <span className="text-[var(--color-text-secondary)]">Need help? </span>
-          <a href="tel:+971523435050" className="text-[var(--color-primary)] hover:underline">
+          <a href="tel:+971551401665" className="text-[var(--color-primary)] hover:underline">
             Contact us
           </a>
         </div>

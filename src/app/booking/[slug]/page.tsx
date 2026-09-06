@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!tour) return { title: 'Not Found' };
 
   return {
-    title: `Book ${tour.name} | Holidayys Tours`,
+    title: `Book ${tour.name} | Alkanz Tours`,
     description: `Complete your booking for ${tour.name}.`,
     robots: {
       index: false,

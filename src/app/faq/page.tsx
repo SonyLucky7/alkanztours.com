@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { getWhatsAppLink } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions | Holidayys Tours',
+  title: 'Frequently Asked Questions | Alkanz Tours',
   description: 'Find answers to commonly asked questions about booking tours, payments, travel in the UAE, and more.',
 };
 

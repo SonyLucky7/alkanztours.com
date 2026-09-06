@@ -3,7 +3,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions | Holidayys Tours',
+  title: 'Terms & Conditions | Alkanz Tours',
 };
 
 export default function TermsPage() {
@@ -22,7 +22,7 @@ export default function TermsPage() {
 
         <div className="container mx-auto px-4 max-w-3xl prose prose-invert prose-gold">
           <p className="text-[var(--color-text-secondary)]">
-            Please read these Terms and Conditions carefully before using the Holidayys Tours website or booking our services.
+            Please read these Terms and Conditions carefully before using the Alkanz Tours website or booking our services.
           </p>
           
           <h2 className="text-2xl text-white font-[family-name:var(--font-playfair)] mt-8 mb-4">1. Booking & Payments</h2>
@@ -39,7 +39,7 @@ export default function TermsPage() {
           
           <h2 className="text-2xl text-white font-[family-name:var(--font-playfair)] mt-8 mb-4">5. Contact Information</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
-            For questions regarding these Terms, please contact us at info@holidayys.com.
+            For questions regarding these Terms, please contact us at info@alkanztours.com.
           </p>
         </div>
       </main>

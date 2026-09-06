@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   const destData = destinations[slug as Destination];
   return {
-    title: `${destData.label} Tours & Experiences | Holidayys Tours`,
-    description: `Explore the best tours and experiences in ${destData.label} with Holidayys Tours.`,
+    title: `${destData.label} Tours & Experiences | Alkanz Tours`,
+    description: `Explore the best tours and experiences in ${destData.label} with Alkanz Tours.`,
   };
 }
 

@@ -4,8 +4,8 @@ import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About Us | Holidayys Tours',
-  description: 'Learn about Holidayys Tours, helping travelers discover memorable experiences across the UAE.',
+  title: 'About Us | Alkanz Tours',
+  description: 'Learn about Alkanz Tours, helping travelers discover memorable experiences across the UAE.',
 };
 
 export default function AboutPage() {
@@ -16,7 +16,7 @@ export default function AboutPage() {
         <section className="relative h-[300px] flex items-center justify-center bg-[var(--color-bg-secondary)] border-b border-[var(--color-border)] mb-16">
           <div className="text-center px-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-white mb-4 font-[family-name:var(--font-playfair)]">
-              About Holidayys Tours
+              About Alkanz Tours
             </h1>
             <p className="text-lg md:text-xl text-[var(--color-text-secondary)] max-w-2xl mx-auto">
               Helping travelers discover memorable experiences across the UAE.
@@ -28,7 +28,7 @@ export default function AboutPage() {
           <section className="space-y-6">
             <h2 className="text-3xl text-[var(--color-brand-primary)] font-[family-name:var(--font-playfair)] mb-6 border-b border-[var(--color-border)] pb-2 inline-block">Our Story</h2>
             <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
-              At Holidayys Tours, we believe that travel is about creating connections and unforgettable memories. We are dedicated to showcasing the incredible diversity of the United Arab Emirates, from the soaring skyline of Dubai to the cultural richness of Abu Dhabi and the natural beauty of the surrounding emirates.
+              At Alkanz Tours, we believe that travel is about creating connections and unforgettable memories. We are dedicated to showcasing the incredible diversity of the United Arab Emirates, from the soaring skyline of Dubai to the cultural richness of Abu Dhabi and the natural beauty of the surrounding emirates.
             </p>
             <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
               Our team of local experts is passionate about delivering authentic experiences. Whether you are seeking a thrilling desert safari, a serene dhow cruise, or a comprehensive city tour, we ensure every journey is crafted with care and precision.
@@ -60,7 +60,7 @@ export default function AboutPage() {
           <section className="space-y-6">
             <h2 className="text-3xl text-[var(--color-brand-primary)] font-[family-name:var(--font-playfair)] mb-6 border-b border-[var(--color-border)] pb-2 inline-block">Our Promise</h2>
             <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
-              We are committed to providing premium, hassle-free travel experiences. From seamless booking processes to exceptional on-ground service, Holidayys Tours prioritizes your comfort, safety, and satisfaction. Every experience we offer is carefully vetted to meet our high standards of quality and excellence.
+              We are committed to providing premium, hassle-free travel experiences. From seamless booking processes to exceptional on-ground service, Alkanz Tours prioritizes your comfort, safety, and satisfaction. Every experience we offer is carefully vetted to meet our high standards of quality and excellence.
             </p>
           </section>
           

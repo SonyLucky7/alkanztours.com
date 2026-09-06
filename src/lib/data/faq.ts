@@ -1,5 +1,5 @@
 // ============================================================
-// Holidayys Tours — FAQ Data
+// Alkanz Tours — FAQ Data
 // Note: Answers use neutral wording where exact company policy
 // is unknown. Content marked [CONFIGURE] should be updated
 // when official policies are confirmed.
@@ -136,11 +136,11 @@ export const faqData: FAQCategory[] = [
     slug: 'general',
     items: [
       {
-        question: 'How can I contact Holidayys Tours?',
-        answer: 'You can reach us by phone at +971 523435050, by email at info@holidayys.com, or via WhatsApp. Our team is happy to assist with any enquiries.',
+        question: 'How can I contact Alkanz Tours?',
+        answer: 'You can reach us by phone at +971 06 5393325, by email at info@alkanztours.com, or via WhatsApp. Our team is happy to assist with any enquiries.',
       },
       {
-        question: 'Where is Holidayys Tours based?',
+        question: 'Where is Alkanz Tours based?',
         answer: 'We are based at 2nd December Street, Dubai, UAE.',
       },
       {

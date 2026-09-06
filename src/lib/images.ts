@@ -1,5 +1,5 @@
 // ============================================================
-// Holidayys Tours — Centralized Image Mapping
+// Alkanz Tours — Centralized Image Mapping
 // Replace URLs here to swap imagery without touching UI code
 // ============================================================
 

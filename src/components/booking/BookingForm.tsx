@@ -129,7 +129,7 @@ export function BookingForm({ tour }: { tour: Tour }) {
         </button>
         <div className="text-center mt-4">
           <span className="text-[var(--color-text-secondary)] text-sm">Or contact us at </span>
-          <a href="tel:+971523435050" className="text-white hover:text-[var(--color-primary)] text-sm font-semibold">+971 523435050</a>
+          <a href="tel:+971551401665" className="text-white hover:text-[var(--color-primary)] text-sm font-semibold">+971 06 5393325</a>
         </div>
       </div>
     </form>

@@ -4,7 +4,7 @@ import Footer from '@/components/layout/Footer';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Page Not Found | Holidayys Tours',
+  title: 'Page Not Found | Alkanz Tours',
 };
 
 export default function NotFound() {

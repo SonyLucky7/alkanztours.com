@@ -1,13 +1,14 @@
 // ============================================================
-// Holidayys Tours — Utility Functions
+// Alkanz Tours — Utility Functions
 // ============================================================
 
-const WHATSAPP_NUMBER = '971523435050';
+const WHATSAPP_NUMBER = '971551401665';
 const BRAND = {
-  name: 'HOLIDAYYS TOURS',
-  phone: '+971 523435050',
-  email: 'info@holidayys.com',
-  address: '2nd December Street, Dubai, UAE',
+  name: 'ALKANZ TOURS',
+  phone: '+971 06 5393325',
+  mobile: '+971 55 140 1665',
+  email: 'info@alkanztours.com',
+  address: 'Al Reem Building No 2, Opposite Industrial Area 17, Kalba Road, Sharjah, UAE',
   whatsapp: WHATSAPP_NUMBER,
 } as const;
 
@@ -22,7 +23,7 @@ export function getWhatsAppLink(params?: {
   guests?: number;
   customerName?: string;
 }): string {
-  let message = 'Hi Holidayys';
+  let message = 'Hi Alkanz';
   if (params?.tourName) {
     message += `, I am interested in booking ${params.tourName}`;
     if (params.date) message += ` for ${params.date}`;

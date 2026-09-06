@@ -5,8 +5,8 @@ import ContactForm from '@/components/ContactForm';
 import { BRAND, getTelLink, getMailtoLink, getWhatsAppLink } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Holidayys Tours',
-  description: 'Get in touch with Holidayys Tours for bookings, inquiries, and support.',
+  title: 'Contact Us | Alkanz Tours',
+  description: 'Get in touch with Alkanz Tours for bookings, inquiries, and support.',
 };
 
 export default function ContactPage() {
@@ -94,12 +94,12 @@ export default function ContactPage() {
               {/* Google Maps Embed */}
               <div className="bg-[var(--color-bg-secondary)] rounded-lg border border-[var(--color-border)] h-[300px] overflow-hidden">
                 <iframe 
-                  src="https://maps.google.com/maps?q=25.2315203,55.286357&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                  src="https://maps.google.com/maps?q=25.2859518,55.451056&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                   className="w-full h-full border-0" 
                   allowFullScreen={false} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Holidayys.com Office Location"
+                  title="Alkanz Tours Office Location"
                 ></iframe>
               </div>
             </div>

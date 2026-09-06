@@ -3,7 +3,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Holidayys Tours',
+  title: 'Privacy Policy | Alkanz Tours',
 };
 
 export default function PrivacyPage() {
@@ -22,7 +22,7 @@ export default function PrivacyPage() {
 
         <div className="container mx-auto px-4 max-w-3xl prose prose-invert prose-gold">
           <p className="text-[var(--color-text-secondary)]">
-            This Privacy Policy describes how Holidayys Tours ("we," "us," or "our") collects, uses, and shares your personal information when you visit or make a booking on our website.
+            This Privacy Policy describes how Alkanz Tours ("we," "us," or "our") collects, uses, and shares your personal information when you visit or make a booking on our website.
           </p>
           
           <h2 className="text-2xl text-white font-[family-name:var(--font-playfair)] mt-8 mb-4">1. Information We Collect</h2>
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
           
           <h2 className="text-2xl text-white font-[family-name:var(--font-playfair)] mt-8 mb-4">5. Contact Us</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
-            If you have questions about this Privacy Policy, please contact us at info@holidayys.com.
+            If you have questions about this Privacy Policy, please contact us at info@alkanztours.com.
           </p>
         </div>
       </main>

@@ -30,13 +30,13 @@ export default function Navbar() {
         <div className="container mx-auto px-6 h-full flex items-center justify-between">
           <Link
             href="/"
-            className="relative block w-40 h-10 md:w-56 md:h-14 overflow-hidden"
+            className="relative block w-[280px] h-[110px] md:w-[400px] md:h-[160px] overflow-hidden"
           >
             <Image 
-              src="/logo.png" 
-              alt="Holidayys Tours" 
+              src="/logo-alkanz.png" 
+              alt="Alkanz Tours" 
               fill
-              className="object-cover object-center"
+              className="object-contain object-left"
               priority 
             />
           </Link>

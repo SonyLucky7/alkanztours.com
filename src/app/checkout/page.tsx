@@ -45,7 +45,7 @@ export default function CheckoutPage() {
     // Clear cart and open WA
     clearCart();
     
-    const waUrl = `https://wa.me/971523435050?text=${encodeURIComponent(message)}`;
+    const waUrl = `https://wa.me/971551401665?text=${encodeURIComponent(message)}`;
     window.open(waUrl, '_blank');
     router.push('/');
   };
