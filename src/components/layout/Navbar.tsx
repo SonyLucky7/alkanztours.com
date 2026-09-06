@@ -60,13 +60,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Toggle */}
-          <div className="flex md:hidden items-center gap-4">
-            <Link
-              href="/tours"
-              className="btn-gold btn-gold-sm"
-            >
-              BOOK NOW
-            </Link>
+          <div className="flex md:hidden items-center">
             <button
               onClick={() => setIsMobileMenuOpen(true)}
               className="text-white p-2"
