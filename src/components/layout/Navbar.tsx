@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="container mx-auto px-4 sm:px-6 h-full flex items-center justify-between relative">
           <Link
             href="/"
-            className="relative block w-[140px] h-[55px] md:w-[200px] md:h-[80px] lg:w-[280px] lg:h-[110px] overflow-hidden"
+            className="relative block w-[200px] h-[80px] md:w-[280px] md:h-[110px] lg:w-[400px] lg:h-[160px] overflow-hidden"
           >
             <Image 
               src="/logo-alkanz.png" 

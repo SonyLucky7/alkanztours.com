@@ -24,7 +24,7 @@ export default function CheckoutLayout({ children }: { children: ReactNode }) {
 
       <header className="border-b border-[var(--color-border)]/50 bg-[#080808]/80 backdrop-blur-md sticky top-0 z-50 relative">
         <div className="container mx-auto px-4 lg:px-8 h-[80px] flex items-center justify-between">
-          <Link href="/" className="relative block w-[140px] h-[55px] md:w-[200px] md:h-[80px] overflow-hidden">
+          <Link href="/" className="relative block w-[200px] h-[80px] md:w-[280px] md:h-[110px] overflow-hidden">
             <Image 
               src="/logo-alkanz.png" 
               alt="Alkanz Tours" 

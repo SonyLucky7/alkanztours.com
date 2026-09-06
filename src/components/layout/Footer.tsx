@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex flex-col gap-6">
             <Link
               href="/"
-              className="relative block w-[160px] h-[65px] md:w-[220px] md:h-[85px] lg:w-[280px] lg:h-[110px] overflow-hidden"
+              className="relative block w-[200px] h-[80px] md:w-[280px] md:h-[110px] lg:w-[400px] lg:h-[160px] overflow-hidden"
             >
               <Image 
                 src="/logo-alkanz.png" 

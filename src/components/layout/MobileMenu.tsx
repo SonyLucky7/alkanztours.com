@@ -40,7 +40,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           <Link 
             href="/" 
             onClick={onClose}
-            className="relative block w-[160px] h-[65px] overflow-hidden cursor-pointer"
+            className="relative block w-[200px] h-[80px] overflow-hidden cursor-pointer"
           >
             <Image 
               src="/logo-alkanz.png" 
