@@ -194,7 +194,7 @@ export default function CheckoutPage() {
               type="submit"
               form="checkout-form"
               onClick={step === 2 ? handleContinue : undefined}
-              className="inline-flex items-center justify-center bg-[var(--color-primary)] text-black font-semibold uppercase tracking-wider text-sm sm:text-base rounded-full px-10 py-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(205,158,56,0.4)] w-full sm:w-auto"
+              className="btn-gold w-full sm:w-auto"
             >
               {step === 1 ? 'Continue' : 'Complete Booking via WhatsApp'}
             </button>

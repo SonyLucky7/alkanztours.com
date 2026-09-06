@@ -32,13 +32,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4">
           <Link 
             href="/tours" 
-            className="inline-flex items-center justify-center bg-[var(--color-primary)] text-black font-semibold uppercase tracking-wider text-sm rounded-full px-10 py-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(205,158,56,0.4)]"
+            className="btn-gold"
           >
             Explore Tours
           </Link>
           <Link 
             href="/contact" 
-            className="inline-flex items-center justify-center border border-white/30 text-white font-semibold uppercase tracking-wider text-sm rounded-full px-10 py-4 transition-all duration-300 hover:bg-white/10 hover:border-white/50"
+            className="btn-gold-outline"
           >
             Plan Your Experience
           </Link>

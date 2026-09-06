@@ -78,7 +78,7 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
 
         <button 
           onClick={handleBookNow}
-          className="w-full inline-flex items-center justify-center bg-[var(--color-primary)] text-black font-semibold uppercase tracking-wider text-sm rounded-full py-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(205,158,56,0.4)] mb-3"
+          className="btn-gold w-full mb-3"
         >
           Book Now
         </button>
@@ -87,7 +87,7 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
           href={getWhatsAppLink({ tourName: tour.name })}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full inline-flex items-center justify-center border border-[var(--color-border)] hover:border-[var(--color-primary)] hover:shadow-[0_0_15px_rgba(205,158,56,0.2)] text-white font-semibold uppercase tracking-wider text-sm rounded-full py-4 transition-all duration-300"
+          className="btn-gold-outline w-full"
         >
           Chat on WhatsApp
         </a>
@@ -108,7 +108,7 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
           </div>
           <button 
             onClick={handleBookNow}
-            className="inline-flex items-center justify-center bg-[var(--color-primary)] text-black font-semibold uppercase tracking-wider text-xs sm:text-sm rounded-full px-6 sm:px-8 py-3 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_15px_rgba(205,158,56,0.4)]"
+            className="btn-gold btn-gold-sm"
           >
             Book Now
           </button>
