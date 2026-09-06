@@ -32,8 +32,8 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
 
   return (
     <>
-      {/* Desktop Sidebar */}
-      <div className="hidden lg:block sticky top-[100px] bg-[var(--color-bg-card)] rounded-2xl border border-[var(--color-border)] p-6">
+      {/* Sidebar Form */}
+      <div id="booking-section" className="sticky top-[100px] bg-[var(--color-bg-card)] rounded-2xl border border-[var(--color-border)] p-6 mb-8 lg:mb-0">
         <h3 className="font-playfair text-xl text-white mb-2">{tour.name}</h3>
         <div className="text-3xl text-[var(--color-primary)] font-semibold mb-1">
           {formatPrice(tour.price)}
@@ -56,18 +56,18 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
           <div className="flex justify-between items-center bg-[var(--color-bg-secondary)] rounded-xl p-3 border border-[var(--color-border)]">
             <span className="text-white">Adults</span>
             <div className="flex items-center gap-3">
-              <button onClick={() => setAdults(Math.max(1, adults - 1))} className="w-8 h-8 flex items-center justify-center bg-[var(--color-bg)] rounded-full text-white hover:text-[var(--color-primary)]">-</button>
+              <button onClick={() => setAdults(Math.max(1, adults - 1))} className="w-10 h-10 min-w-[40px] min-h-[40px] text-lg flex items-center justify-center bg-[var(--color-bg)] rounded-full text-white hover:text-[var(--color-primary)]">-</button>
               <span className="text-white w-4 text-center">{adults}</span>
-              <button onClick={() => setAdults(adults + 1)} className="w-8 h-8 flex items-center justify-center bg-[var(--color-bg)] rounded-full text-white hover:text-[var(--color-primary)]">+</button>
+              <button onClick={() => setAdults(adults + 1)} className="w-10 h-10 min-w-[40px] min-h-[40px] text-lg flex items-center justify-center bg-[var(--color-bg)] rounded-full text-white hover:text-[var(--color-primary)]">+</button>
             </div>
           </div>
 
           <div className="flex justify-between items-center bg-[var(--color-bg-secondary)] rounded-xl p-3 border border-[var(--color-border)]">
             <span className="text-white">Children</span>
             <div className="flex items-center gap-3">
-              <button onClick={() => setChildren(Math.max(0, children - 1))} className="w-8 h-8 flex items-center justify-center bg-[var(--color-bg)] rounded-full text-white hover:text-[var(--color-primary)]">-</button>
+              <button onClick={() => setChildren(Math.max(0, children - 1))} className="w-10 h-10 min-w-[40px] min-h-[40px] text-lg flex items-center justify-center bg-[var(--color-bg)] rounded-full text-white hover:text-[var(--color-primary)]">-</button>
               <span className="text-white w-4 text-center">{children}</span>
-              <button onClick={() => setChildren(children + 1)} className="w-8 h-8 flex items-center justify-center bg-[var(--color-bg)] rounded-full text-white hover:text-[var(--color-primary)]">+</button>
+              <button onClick={() => setChildren(children + 1)} className="w-10 h-10 min-w-[40px] min-h-[40px] text-lg flex items-center justify-center bg-[var(--color-bg)] rounded-full text-white hover:text-[var(--color-primary)]">+</button>
             </div>
           </div>
         </div>
@@ -104,14 +104,24 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
       <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-black/80 backdrop-blur-md py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] px-4 sm:px-6 z-40 border-t border-[var(--color-border)]">
         <div className="flex justify-between items-center max-w-md mx-auto">
           <div>
-            <div className="text-[var(--color-text-secondary)] text-xs">Price from</div>
-            <div className="text-lg text-[var(--color-primary)] font-semibold">{formatPrice(tour.price)}</div>
+            <div className="text-[var(--color-text-secondary)] text-xs">Total for {adults + children} pax</div>
+            <div className="text-lg text-[var(--color-primary)] font-semibold">{formatPrice(totalAED)}</div>
           </div>
           <button 
-            onClick={handleBookNow}
+            onClick={() => {
+              const el = document.getElementById('booking-section');
+              if (el && !date) {
+                el.scrollIntoView({ behavior: 'smooth' });
+                // Focus the date input to prompt the user
+                const dateInput = el.querySelector('input[type="date"]') as HTMLInputElement;
+                if (dateInput) setTimeout(() => dateInput.focus(), 500);
+              } else {
+                handleBookNow();
+              }
+            }}
             className="btn-gold btn-gold-sm"
           >
-            Book Now
+            {date ? 'Book Now' : 'Select Date'}
           </button>
         </div>
       </div>

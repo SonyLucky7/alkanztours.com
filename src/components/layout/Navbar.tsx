@@ -59,7 +59,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Toggle */}
-          <div className="flex md:hidden items-center">
+          <div className="flex lg:hidden items-center">
             <button
               onClick={() => setIsMobileMenuOpen(true)}
               className="text-white p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center"
