@@ -78,7 +78,7 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
 
         <button 
           onClick={handleBookNow}
-          className="w-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-black rounded-full py-4 text-lg font-semibold transition-colors mb-3"
+          className="w-full inline-flex items-center justify-center bg-[var(--color-primary)] text-black font-semibold uppercase tracking-wider text-sm rounded-full py-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(201,162,39,0.4)] mb-3"
         >
           Book Now
         </button>
@@ -87,7 +87,7 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
           href={getWhatsAppLink({ tourName: tour.name })}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full block text-center border border-[var(--color-border)] hover:border-[var(--color-primary)] text-white rounded-full py-4 font-semibold transition-colors"
+          className="w-full inline-flex items-center justify-center border border-[var(--color-border)] hover:border-[var(--color-primary)] hover:shadow-[0_0_15px_rgba(201,162,39,0.2)] text-white font-semibold uppercase tracking-wider text-sm rounded-full py-4 transition-all duration-300"
         >
           Chat on WhatsApp
         </a>
@@ -108,7 +108,7 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
           </div>
           <button 
             onClick={handleBookNow}
-            className="bg-[var(--color-primary)] text-black px-8 py-3 rounded-full font-semibold"
+            className="inline-flex items-center justify-center bg-[var(--color-primary)] text-black font-semibold uppercase tracking-wider text-xs sm:text-sm rounded-full px-6 sm:px-8 py-3 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_15px_rgba(201,162,39,0.4)]"
           >
             Book Now
           </button>

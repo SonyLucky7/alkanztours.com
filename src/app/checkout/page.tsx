@@ -143,7 +143,7 @@ export default function CheckoutPage() {
                       <select 
                         value={formData.phoneCode}
                         onChange={(e) => setFormData({...formData, phoneCode: e.target.value})}
-                        className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-white rounded-xl px-4 py-3 outline-none focus:border-[var(--color-primary)] w-32"
+                        className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-white rounded-xl px-2 sm:px-4 py-3 outline-none focus:border-[var(--color-primary)] w-[100px] sm:w-32 shrink-0"
                       >
                         <option value="+971">🇦🇪 +971</option>
                         <option value="+91">🇮🇳 +91</option>
@@ -156,7 +156,7 @@ export default function CheckoutPage() {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                        className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-white rounded-xl px-4 py-3 outline-none focus:border-[var(--color-primary)] flex-1"
+                        className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-white rounded-xl px-4 py-3 outline-none focus:border-[var(--color-primary)] flex-1 min-w-0"
                       />
                     </div>
                   </div>
@@ -194,7 +194,7 @@ export default function CheckoutPage() {
               type="submit"
               form="checkout-form"
               onClick={step === 2 ? handleContinue : undefined}
-              className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-medium rounded-lg px-10 py-3.5 transition-colors text-lg"
+              className="inline-flex items-center justify-center bg-[var(--color-primary)] text-black font-semibold uppercase tracking-wider text-sm sm:text-base rounded-full px-10 py-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(201,162,39,0.4)] w-full sm:w-auto"
             >
               {step === 1 ? 'Continue' : 'Complete Booking via WhatsApp'}
             </button>
