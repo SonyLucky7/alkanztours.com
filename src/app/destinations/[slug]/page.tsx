@@ -14,8 +14,8 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const { slug } = params;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
   if (!(slug in destinations)) {
     return { title: 'Destination Not Found' };
   }
@@ -27,8 +27,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function DestinationPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function DestinationPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   
   if (!(slug in destinations)) {
     notFound();

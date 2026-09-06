@@ -89,7 +89,7 @@ export function BookingForm({ tour }: { tour: Tour }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label className="block text-sm text-[var(--color-text-secondary)] mb-2" htmlFor="date">Travel Date *</label>
-            <input required type="date" id="date" name="date" value={formData.date} onChange={handleChange} style={{ colorScheme: 'dark' }} className="w-full bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-white rounded-xl px-4 py-3 focus:border-[var(--color-primary)] outline-none" />
+            <input required type="date" min={new Date().toISOString().split('T')[0]} id="date" name="date" value={formData.date} onChange={handleChange} style={{ colorScheme: 'dark' }} className="w-full bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-white rounded-xl px-4 py-3 focus:border-[var(--color-primary)] outline-none" />
           </div>
         </div>
 

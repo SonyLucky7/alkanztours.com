@@ -45,7 +45,6 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center gap-8">
             <Link href="/tours" className="text-white/70 hover:text-white transition-colors">Tours</Link>
             <Link href="/destinations" className="text-white/70 hover:text-white transition-colors">Destinations</Link>
-            <Link href="/tours" className="text-white/70 hover:text-white transition-colors">Experiences</Link>
             <Link href="/about" className="text-white/70 hover:text-white transition-colors">About</Link>
             <Link href="/contact" className="text-white/70 hover:text-white transition-colors">Contact</Link>
           </nav>

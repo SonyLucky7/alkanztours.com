@@ -13,6 +13,7 @@ export default function CheckoutLayout({ children }: { children: ReactNode }) {
           loop 
           muted 
           playsInline 
+          poster="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=50"
           className="w-full h-full object-cover"
         >
           <source src="/videos/checkout.mp4" type="video/mp4" />

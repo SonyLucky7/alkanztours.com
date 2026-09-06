@@ -45,7 +45,6 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li><Link href="/tours" className="hover:text-[var(--color-primary,#cd9e38)] transition-colors">Tours</Link></li>
               <li><Link href="/destinations" className="hover:text-[var(--color-primary,#cd9e38)] transition-colors">Destinations</Link></li>
-              <li><Link href="/tours" className="hover:text-[var(--color-primary,#cd9e38)] transition-colors">Experiences</Link></li>
               <li><Link href="/about" className="hover:text-[var(--color-primary,#cd9e38)] transition-colors">About</Link></li>
             </ul>
           </div>
@@ -56,7 +55,6 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li><Link href="/contact" className="hover:text-[var(--color-primary,#cd9e38)] transition-colors">Contact</Link></li>
               <li><Link href="/faq" className="hover:text-[var(--color-primary,#cd9e38)] transition-colors">FAQ</Link></li>
-              <li><Link href="/tours" className="hover:text-[var(--color-primary,#cd9e38)] transition-colors">Booking</Link></li>
             </ul>
           </div>
 
@@ -89,7 +87,7 @@ export default function Footer() {
             <span className="text-white/20">|</span>
             <Link href="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
             <span className="text-white/20">|</span>
-            <Link href="/cookie" className="hover:text-white transition-colors">Cookie Policy</Link>
+            <Link href="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

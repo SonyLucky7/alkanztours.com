@@ -9,6 +9,7 @@ export default function CTASection() {
           src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1920&q=80"
           alt="Dubai Skyline at Sunset"
           fill
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />

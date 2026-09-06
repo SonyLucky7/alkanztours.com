@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Tour } from '@/lib/data/tours';
 import { getTourImage } from '@/lib/images';
-import { formatPrice, cn } from '@/lib/utils';
+import { formatPrice } from '@/lib/utils';
 
 interface TourCardProps {
   tour: Tour;

@@ -45,6 +45,7 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
             <label className="block text-sm text-[var(--color-text-secondary)] mb-1">Date</label>
             <input 
               type="date" 
+              min={new Date().toISOString().split('T')[0]}
               value={date}
               onChange={(e) => setDate(e.target.value)}
               style={{ colorScheme: 'dark' }}

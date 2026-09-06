@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: `${tour.name} | Holidayys Tours`,
       description: tour.description,
-      images: [{ url: getTourImage(tour.category, tour.name) }],
+      images: [{ url: getTourImage(tour.slug, tour.category) }],
     }
   };
 }
@@ -47,7 +47,7 @@ export default async function TourPage({ params }: { params: Promise<{ slug: str
     '@type': ['TouristAttraction', 'Product'],
     name: tour.name,
     description: tour.description,
-    image: getTourImage(tour.category, tour.name),
+    image: getTourImage(tour.slug, tour.category),
     offers: {
       '@type': 'Offer',
       price: tour.price,

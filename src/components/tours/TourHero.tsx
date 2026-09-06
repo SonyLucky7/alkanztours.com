@@ -24,6 +24,7 @@ export function TourHero({ tour }: TourHeroProps) {
         src={imageUrl}
         alt={tour.name}
         fill
+        sizes="100vw"
         className="object-cover"
         priority
       />

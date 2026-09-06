@@ -3,7 +3,6 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ContactForm from '@/components/ContactForm';
 import { BRAND, getTelLink, getMailtoLink, getWhatsAppLink } from '@/lib/utils';
-import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Holidayys Tours',
