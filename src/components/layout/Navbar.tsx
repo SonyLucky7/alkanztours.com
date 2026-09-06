@@ -27,7 +27,7 @@ export default function Navbar() {
             : 'bg-transparent'
         }`}
       >
-        <div className="container mx-auto px-6 h-full flex items-center justify-between">
+        <div className="container mx-auto px-6 h-full flex items-center justify-between relative">
           <Link
             href="/"
             className="relative block w-[280px] h-[110px] md:w-[400px] md:h-[160px] overflow-hidden"
@@ -41,8 +41,8 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          {/* Desktop Nav - Absolutely Centered */}
+          <nav className="hidden lg:flex items-center gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <Link href="/tours" className="text-white/70 hover:text-white transition-colors">Tours</Link>
             <Link href="/destinations" className="text-white/70 hover:text-white transition-colors">Destinations</Link>
             <Link href="/about" className="text-white/70 hover:text-white transition-colors">About</Link>
@@ -50,7 +50,6 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center gap-6">
-
             <Link
               href="/tours"
               className="btn-gold btn-gold-sm"
