@@ -5,14 +5,15 @@ import { CurrencySwitcher } from './CurrencySwitcher';
 
 export default function CheckoutLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen text-white font-[family-name:var(--font-inter)] relative">
+    <div className="min-h-screen text-white font-[family-name:var(--font-inter)] relative overflow-hidden">
       {/* Fixed Video Background */}
-      <div className="fixed inset-0 z-[-2]">
+      <div className="fixed inset-0 z-0">
         <video 
           autoPlay 
           loop 
           muted 
-          playsInline 
+          playsInline
+          preload="auto"
           poster="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=50"
           className="w-full h-full object-cover"
         >
@@ -20,9 +21,9 @@ export default function CheckoutLayout({ children }: { children: ReactNode }) {
         </video>
       </div>
       {/* Dark Overlay for readability */}
-      <div className="fixed inset-0 bg-[#080808]/80 z-[-1]"></div>
+      <div className="fixed inset-0 bg-[#080808]/80 z-[1]"></div>
 
-      <header className="border-b border-[var(--color-border)]/50 bg-[#080808]/80 backdrop-blur-md sticky top-0 z-50">
+      <header className="border-b border-[var(--color-border)]/50 bg-[#080808]/80 backdrop-blur-md sticky top-0 z-50 relative">
         <div className="container mx-auto px-4 lg:px-8 h-[80px] flex items-center justify-between">
           <Link href="/" className="relative block w-[280px] h-[110px] md:w-[380px] md:h-[150px] overflow-hidden">
             <Image 
@@ -45,7 +46,9 @@ export default function CheckoutLayout({ children }: { children: ReactNode }) {
           </div>
         </div>
       </header>
-      {children}
+      <div className="relative z-10">
+        {children}
+      </div>
     </div>
   );
 }
