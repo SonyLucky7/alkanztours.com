@@ -59,11 +59,11 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </div>
 
         <nav className="flex flex-col gap-6 mb-12 flex-1">
-          <Link href="/tours" onClick={onClose} className="text-2xl font-medium text-white hover:text-[var(--color-primary,#C9A227)] transition-colors animate-in slide-in-from-right-4 fade-in duration-500 delay-75">Tours</Link>
-          <Link href="/destinations" onClick={onClose} className="text-2xl font-medium text-white hover:text-[var(--color-primary,#C9A227)] transition-colors animate-in slide-in-from-right-4 fade-in duration-500 delay-100">Destinations</Link>
-          <Link href="/tours" onClick={onClose} className="text-2xl font-medium text-white hover:text-[var(--color-primary,#C9A227)] transition-colors animate-in slide-in-from-right-4 fade-in duration-500 delay-150">Experiences</Link>
-          <Link href="/about" onClick={onClose} className="text-2xl font-medium text-white hover:text-[var(--color-primary,#C9A227)] transition-colors animate-in slide-in-from-right-4 fade-in duration-500 delay-200">About</Link>
-          <Link href="/contact" onClick={onClose} className="text-2xl font-medium text-white hover:text-[var(--color-primary,#C9A227)] transition-colors animate-in slide-in-from-right-4 fade-in duration-500 delay-300">Contact</Link>
+          <Link href="/tours" onClick={onClose} className="text-2xl font-medium text-white hover:text-[var(--color-primary,#cd9e38)] transition-colors animate-in slide-in-from-right-4 fade-in duration-500 delay-75">Tours</Link>
+          <Link href="/destinations" onClick={onClose} className="text-2xl font-medium text-white hover:text-[var(--color-primary,#cd9e38)] transition-colors animate-in slide-in-from-right-4 fade-in duration-500 delay-100">Destinations</Link>
+          <Link href="/tours" onClick={onClose} className="text-2xl font-medium text-white hover:text-[var(--color-primary,#cd9e38)] transition-colors animate-in slide-in-from-right-4 fade-in duration-500 delay-150">Experiences</Link>
+          <Link href="/about" onClick={onClose} className="text-2xl font-medium text-white hover:text-[var(--color-primary,#cd9e38)] transition-colors animate-in slide-in-from-right-4 fade-in duration-500 delay-200">About</Link>
+          <Link href="/contact" onClick={onClose} className="text-2xl font-medium text-white hover:text-[var(--color-primary,#cd9e38)] transition-colors animate-in slide-in-from-right-4 fade-in duration-500 delay-300">Contact</Link>
         </nav>
 
         <div className="flex flex-col gap-4 animate-in slide-in-from-bottom-4 fade-in duration-500 delay-300">

@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4">
           <Link 
             href="/tours" 
-            className="inline-flex items-center justify-center bg-[var(--color-primary)] text-black font-semibold uppercase tracking-wider text-sm rounded-full px-10 py-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(201,162,39,0.4)]"
+            className="inline-flex items-center justify-center bg-[var(--color-primary)] text-black font-semibold uppercase tracking-wider text-sm rounded-full px-10 py-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(205,158,56,0.4)]"
           >
             Explore Tours
           </Link>

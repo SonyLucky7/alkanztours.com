@@ -8,10 +8,10 @@
 
 :root {
   /* ── Brand Colors ──────────────────────────────────────── */
-  --color-primary: #C9A227;
-  --color-primary-light: #E5C76B;
-  --color-primary-dark: #A68520;
-  --color-primary-rgb: 201, 162, 39;
+  --color-primary: #cd9e38;
+  --color-primary-light: #f0cc60;
+  --color-primary-dark: #a2701d;
+  --color-primary-rgb: 205, 158, 56;
 
   /* ── Backgrounds ───────────────────────────────────────── */
   --color-bg: #080808;
