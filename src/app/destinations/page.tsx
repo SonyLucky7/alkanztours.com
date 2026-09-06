@@ -16,9 +16,9 @@ export default function DestinationsPage() {
     <div className="min-h-screen bg-[var(--color-bg)] flex flex-col">
       <Navbar />
       <main className="flex-grow pt-24 pb-16">
-        <section className="relative h-[300px] flex items-center justify-center bg-[var(--color-bg-secondary)] border-b border-[var(--color-border)] mb-16">
+        <section className="relative h-[200px] sm:h-[260px] md:h-[300px] flex items-center justify-center bg-[var(--color-bg-secondary)] border-b border-[var(--color-border)] mb-8 sm:mb-12 md:mb-16">
           <div className="text-center px-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-white mb-4 font-[family-name:var(--font-playfair)]">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white mb-4 font-[family-name:var(--font-playfair)]">
               Explore Our Destinations
             </h1>
             <p className="text-lg md:text-xl text-[var(--color-text-secondary)] max-w-2xl mx-auto">
@@ -44,8 +44,8 @@ export default function DestinationsPage() {
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-8">
-                    <h2 className="text-3xl text-white font-[family-name:var(--font-playfair)] mb-1">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-6 md:p-8">
+                    <h2 className="text-2xl sm:text-3xl text-white font-[family-name:var(--font-playfair)] mb-1">
                       {data.label}
                     </h2>
                     <p className="text-sm text-[var(--color-primary)] font-medium mb-2">{data.tagline}</p>

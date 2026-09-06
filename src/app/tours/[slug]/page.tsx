@@ -67,8 +67,8 @@ export default async function TourPage({ params }: { params: Promise<{ slug: str
       <main className="min-h-screen bg-[var(--color-bg)] pb-20">
         <TourHero tour={tour} />
         
-        <div className="container mx-auto px-6 py-12">
-          <div className="flex flex-col lg:flex-row gap-12">
+        <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             <div className="w-full lg:w-[65%]">
               <TourContent tour={tour} />
             </div>

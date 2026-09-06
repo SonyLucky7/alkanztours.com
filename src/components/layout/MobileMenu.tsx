@@ -34,13 +34,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       
       {/* Drawer */}
       <div 
-        className="relative w-full max-w-sm h-full bg-[#080808] flex flex-col p-6 animate-in slide-in-from-right duration-300"
+        className="relative w-full max-w-sm h-full bg-[#080808] flex flex-col p-6 overflow-y-auto animate-in slide-in-from-right duration-300"
       >
         <div className="flex items-center justify-between mb-12">
           <Link 
             href="/" 
             onClick={onClose}
-            className="relative block w-[280px] h-[110px] overflow-hidden cursor-pointer"
+            className="relative block w-[160px] h-[65px] overflow-hidden cursor-pointer"
           >
             <Image 
               src="/logo-alkanz.png" 

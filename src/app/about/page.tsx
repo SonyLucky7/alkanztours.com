@@ -13,9 +13,9 @@ export default function AboutPage() {
     <div className="min-h-screen bg-[var(--color-bg)] flex flex-col">
       <Navbar />
       <main className="flex-grow pt-24 pb-16">
-        <section className="relative h-[300px] flex items-center justify-center bg-[var(--color-bg-secondary)] border-b border-[var(--color-border)] mb-16">
+        <section className="relative h-[200px] sm:h-[260px] md:h-[300px] flex items-center justify-center bg-[var(--color-bg-secondary)] border-b border-[var(--color-border)] mb-8 sm:mb-12 md:mb-16">
           <div className="text-center px-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-white mb-4 font-[family-name:var(--font-playfair)]">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white mb-4 font-[family-name:var(--font-playfair)]">
               About Alkanz Tours
             </h1>
             <p className="text-lg md:text-xl text-[var(--color-text-secondary)] max-w-2xl mx-auto">
@@ -24,7 +24,7 @@ export default function AboutPage() {
           </div>
         </section>
         
-        <div className="container mx-auto px-4 max-w-4xl space-y-24">
+        <div className="container mx-auto px-4 max-w-4xl space-y-12 sm:space-y-16 md:space-y-24">
           <section className="space-y-6">
             <h2 className="text-3xl text-[var(--color-brand-primary)] font-[family-name:var(--font-playfair)] mb-6 border-b border-[var(--color-border)] pb-2 inline-block">Our Story</h2>
             <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">

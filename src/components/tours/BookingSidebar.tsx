@@ -101,7 +101,7 @@ export function BookingSidebar({ tour }: { tour: Tour }) {
       </div>
 
       {/* Mobile Fixed Bottom Bar */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-black/80 backdrop-blur-md py-4 px-6 z-40 border-t border-[var(--color-border)]">
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-black/80 backdrop-blur-md py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] px-4 sm:px-6 z-40 border-t border-[var(--color-border)]">
         <div className="flex justify-between items-center max-w-md mx-auto">
           <div>
             <div className="text-[var(--color-text-secondary)] text-xs">Price from</div>

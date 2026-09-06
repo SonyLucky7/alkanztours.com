@@ -10,7 +10,7 @@ export default function DestinationsSection() {
     <section className="py-[var(--space-section)] w-full">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center md:text-left">
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[var(--color-text-primary)]">
+          <h2 className="font-[family-name:var(--font-playfair)] text-2xl sm:text-3xl md:text-5xl text-[var(--color-text-primary)]">
             Discover Your Destination
           </h2>
         </div>
@@ -23,7 +23,7 @@ export default function DestinationsSection() {
               <Link 
                 key={slug} 
                 href={`/destinations/${slug}`}
-                className="group relative overflow-hidden rounded-2xl aspect-[16/9] block"
+                className="group relative overflow-hidden rounded-2xl min-h-[240px] sm:min-h-0 aspect-[16/9] block"
               >
                 <Image
                   src={imageUrl}
@@ -33,8 +33,8 @@ export default function DestinationsSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
                 
-                <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                  <h3 className="font-[family-name:var(--font-playfair)] text-white text-3xl md:text-4xl mb-2">
+                <div className="absolute inset-0 p-4 sm:p-6 md:p-8 flex flex-col justify-end">
+                  <h3 className="font-[family-name:var(--font-playfair)] text-white text-xl sm:text-2xl md:text-3xl mb-2">
                     {destination.label}
                   </h3>
                   

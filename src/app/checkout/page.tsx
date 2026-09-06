@@ -68,7 +68,7 @@ export default function CheckoutPage() {
       {/* Stepper */}
       <div className="max-w-4xl mx-auto mb-16 px-4">
         <div className="relative flex justify-between items-center">
-          <div className="absolute left-0 top-1/2 w-full h-[2px] bg-[var(--color-border)] -z-10 -translate-y-1/2"></div>
+          <div className="absolute left-0 top-1/2 w-full h-[2px] bg-[var(--color-border)] z-0 -translate-y-1/2"></div>
           
           <div className="flex flex-col items-center">
             <div className={`w-6 h-6 rounded-full border-[6px] border-[var(--color-bg)] ${step >= 1 ? 'bg-[var(--color-primary)]' : 'bg-[var(--color-border)]'}`}></div>
@@ -89,7 +89,7 @@ export default function CheckoutPage() {
           {step === 1 && (
             <div>
               <h2 className="text-2xl font-semibold mb-6">Main traveller's contact details</h2>
-              <form id="checkout-form" onSubmit={handleContinue} className="bg-[#111111]/80 backdrop-blur-md border border-[var(--color-border)] rounded-2xl p-6 md:p-8">
+              <form id="checkout-form" onSubmit={handleContinue} className="bg-[#111111]/80 backdrop-blur-md border border-[var(--color-border)] rounded-2xl p-4 sm:p-6 md:p-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
                     <label className="text-sm font-medium">Title</label>

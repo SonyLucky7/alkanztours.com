@@ -56,17 +56,17 @@ export default function WhyAlkanz() {
   return (
     <section className="py-[var(--space-section)] bg-[#080808] border-t border-white/5 w-full">
       <div className="container mx-auto px-4">
-        <div className="mb-16 text-center">
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-white">
+        <div className="mb-8 sm:mb-12 md:mb-16 text-center">
+          <h2 className="font-[family-name:var(--font-playfair)] text-2xl sm:text-3xl md:text-5xl text-white">
             Travel with Confidence
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
           {benefits.map((benefit, index) => (
             <div 
               key={index} 
-              className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-2xl p-8 text-center flex flex-col items-center hover:border-[var(--color-primary)]/50 transition-colors"
+              className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-2xl p-4 md:p-8 text-center flex flex-col items-center hover:border-[var(--color-primary)]/50 transition-colors"
             >
               <div className="mb-6 bg-white/5 p-4 rounded-full">
                 {benefit.icon}

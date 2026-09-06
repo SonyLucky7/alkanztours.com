@@ -13,7 +13,7 @@ export default function FeaturedExperiences() {
         <span className="text-[var(--color-primary)] tracking-widest text-sm uppercase font-medium mb-3 block">
           CURATED FOR YOU
         </span>
-        <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[var(--color-text-primary)]">
+        <h2 className="font-[family-name:var(--font-playfair)] text-2xl sm:text-3xl md:text-5xl text-[var(--color-text-primary)]">
           Experiences Worth Remembering
         </h2>
       </div>

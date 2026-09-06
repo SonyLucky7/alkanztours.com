@@ -30,7 +30,7 @@ export function TourHero({ tour }: TourHeroProps) {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
       
-      <div className="relative z-10 container mx-auto px-6 pb-12 pt-[120px] md:pt-[140px]">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 pb-12 pt-[120px] md:pt-[140px]">
         <Breadcrumbs 
           items={[
             { label: 'Home', href: '/' },
@@ -46,7 +46,7 @@ export function TourHero({ tour }: TourHeroProps) {
           </span>
           <div className="w-[80px] h-[1px] bg-[var(--color-primary)] mb-6"></div>
           
-          <h1 className="font-playfair text-3xl md:text-5xl lg:text-6xl text-white font-bold mb-4">
+          <h1 className="font-playfair text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white font-bold mb-4">
             {tour.name}
           </h1>
           
@@ -54,7 +54,7 @@ export function TourHero({ tour }: TourHeroProps) {
             {tour.description}
           </p>
           
-          <div className="flex flex-wrap items-center gap-6 mb-8 text-white/90">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-6 mb-8 text-white/90">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />

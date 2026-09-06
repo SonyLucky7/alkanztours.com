@@ -8,7 +8,7 @@ export default function CategoryExplorer() {
     <section className="py-[var(--space-section)] bg-[var(--color-bg-secondary)] w-full">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[var(--color-text-primary)]">
+          <h2 className="font-[family-name:var(--font-playfair)] text-2xl sm:text-3xl md:text-5xl text-[var(--color-text-primary)]">
             Explore by Category
           </h2>
         </div>
@@ -31,8 +31,8 @@ export default function CategoryExplorer() {
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
                 
-                <div className="absolute inset-0 p-4 md:p-6 flex flex-col items-center justify-center text-center">
-                  <h3 className="text-white font-semibold text-lg md:text-xl mb-1">
+                <div className="absolute inset-0 p-2.5 sm:p-4 md:p-6 flex flex-col items-center justify-center text-center">
+                  <h3 className="text-white font-semibold text-sm sm:text-base md:text-xl mb-1 line-clamp-2">
                     {category.label}
                   </h3>
                   <p className="text-white/70 text-sm transition-opacity">
