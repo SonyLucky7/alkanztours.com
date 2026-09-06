@@ -9,7 +9,7 @@ export default function Hero() {
           loop 
           muted 
           playsInline 
-          poster="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=50"
+          preload="auto"
           className="w-full h-full object-cover"
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
