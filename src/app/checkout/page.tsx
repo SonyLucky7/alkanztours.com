@@ -92,7 +92,7 @@ export default function CheckoutPage() {
               <form id="checkout-form" onSubmit={handleContinue} className="bg-[#111111]/80 backdrop-blur-md border border-[var(--color-border)] rounded-2xl p-6 md:p-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
-                    <label className="text-sm font-medium">Title <span className="text-red-500">*</span></label>
+                    <label className="text-sm font-medium">Title</label>
                     <select 
                       value={formData.title}
                       onChange={(e) => setFormData({...formData, title: e.target.value})}
@@ -105,7 +105,7 @@ export default function CheckoutPage() {
                   </div>
                   
                   <div className="flex flex-col gap-2">
-                    <label className="text-sm font-medium">First name <span className="text-red-500">*</span></label>
+                    <label className="text-sm font-medium">First name</label>
                     <input 
                       required
                       type="text"
@@ -116,7 +116,7 @@ export default function CheckoutPage() {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label className="text-sm font-medium">Last name <span className="text-red-500">*</span></label>
+                    <label className="text-sm font-medium">Last name</label>
                     <input 
                       required
                       type="text"
@@ -127,7 +127,7 @@ export default function CheckoutPage() {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label className="text-sm font-medium">Your email address <span className="text-red-500">*</span></label>
+                    <label className="text-sm font-medium">Your email address</label>
                     <input 
                       required
                       type="email"
@@ -138,7 +138,7 @@ export default function CheckoutPage() {
                   </div>
 
                   <div className="flex flex-col gap-2 md:col-span-2">
-                    <label className="text-sm font-medium">Phone number <span className="text-red-500">*</span></label>
+                    <label className="text-sm font-medium">Phone number</label>
                     <div className="flex gap-2">
                       <select 
                         value={formData.phoneCode}
